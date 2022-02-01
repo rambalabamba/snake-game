@@ -1,0 +1,77 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    background-image: linear-gradient(#D9B504, #F2F2F2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 70px;
+    color: #020659;
+}
+
+.grid {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border: 5px dotted #020659;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: 40px;
+    height: 40px; 
+}
+
+.snake {
+    background-color: #6FA638;
+    border-radius: 50px;
+}
+
+.apple {
+    background-color: #BF1B39;
+    border-radius: 50px;
+}
+
+#overlay {
+    margin-bottom: 50px;
+}
+
+#start:hover,
+#start:focus {
+    cursor: pointer;
+    background-color: #8FBF60;
+    color: white;
+}
+
+.difficulty-btn {
+    border: none;
+    background-color: #6FA638;
+    padding: 20px 40px;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+
+.difficulty-btn:hover,
+.difficulty-btn:focus {
+    cursor: pointer;
+    background-color: #8FBF60;
+    color: white;
+}
+
+#game-over {    
+    display: none;
+    position: absolute;
+    color: #020659;
+    margin: 100px auto;
+    font-size: 70px;
+}
